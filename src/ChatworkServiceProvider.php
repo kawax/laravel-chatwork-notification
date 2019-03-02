@@ -4,6 +4,7 @@ namespace Revolution\NotificationChannels\Chatwork;
 
 use GuzzleHttp\Client as HttpClient;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Config;
 
 class ChatworkServiceProvider extends ServiceProvider
 {
@@ -16,9 +17,9 @@ class ChatworkServiceProvider extends ServiceProvider
                   ->needs(Chatwork::class)
                   ->give(function () {
                       return new Chatwork(
-                          config('services.chatwork.api_token'),
+                          Config::get('services.chatwork.api_token'),
                           new HttpClient(),
-                          config('services.chatwork.endpoint')
+                          Config::get('services.chatwork.endpoint')
                       );
                   });
     }

@@ -5,7 +5,7 @@
 
 - ChatWork API v2
 - メッセージごとに token 設定。別アカウントでも投稿するため。
-- PHP7.0以上
+- PHP7.1以上
 - namespace 変更
 
 ```

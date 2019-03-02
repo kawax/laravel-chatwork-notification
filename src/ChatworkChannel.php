@@ -41,7 +41,7 @@ class ChatworkChannel
         }
 
         $sendText = '';
-        if (is_a($chatworkMessage, ChatworkMessage::class)) {
+        if ($chatworkMessage instanceof ChatworkMessage) {
             // normal message
             $sendText .= $chatworkMessage->message;
         } else {
