@@ -1,5 +1,9 @@
 # ChatWork Notifications Channel for Laravel
 
+## 終了
+使わなくなってきたのでpackagistからは削除。
+composer.jsonで直接repositoriesを指定すれば使えるけど使いたい人がいるならフォークして自分で管理したほうがいい。
+
 ## オリジナルからの変更点
 フォークして使ってたけど毎回 composer.json で repositories の設定が面倒になってきたので別パッケージとして登録。
 
